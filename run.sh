@@ -80,6 +80,7 @@ find "$SRC_ROOT" -name '*.java' -print0 | xargs -0 javac -d "$BIN_DIR"
 # decide class to run
 if [ -n "$cls" ]; then
   RUN_CLASS="${pkg}.${cls}"
+  echo
 else
   # locate package dir
   pkg_dir="$SRC_ROOT/$(echo "$pkg" | tr '.' '/')"
@@ -109,10 +110,12 @@ else
   fi
 
   RUN_CLASS="${pkg}.${class_name}"
+  echo
 fi
 
 echo "Running: java -cp $BIN_DIR $RUN_CLASS"
 echo
 echo
 java -cp "$BIN_DIR" "$RUN_CLASS"
+echo
 echo
