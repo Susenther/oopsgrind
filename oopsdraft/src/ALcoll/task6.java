@@ -28,7 +28,7 @@ class BankAccount{
                 System.out.println("Deposit must be positive");
             }else{
                 Balance += amount;
-                System.out.println("AmountDeposited: "+ amount + "NewBalance: "+ Balance);
+                System.out.println("AmountDeposited: "+ amount + " NewBalance: "+ Balance);
             }
         }
         public void withdraw(double amount){
@@ -38,11 +38,11 @@ class BankAccount{
                 System.out.println("Insufficient funds");
             }else{
                 Balance -= amount;
-                System.out.println("AmountWithdrawen: "+amount + "NNewBalance: "+Balance);
+                System.out.println("AmountWithdrawen: "+amount + " NewBalance: "+Balance);
             }
         }
         public void display(){
-            System.out.println("AccountNo: "+ AccountNo + "Balance: "+ Balance);
+            System.out.println("AccountNo: " + AccountNo + " , Balance: "+ Balance);
         }
     
 
