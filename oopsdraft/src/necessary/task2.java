@@ -34,6 +34,5 @@ public class task2 {
         c2.accelerate(100);
         c2.Brake(40);
         c2.display();
-    }
-    
+    }   
 }
